@@ -38,6 +38,7 @@ public class StudentController {
             Student student1 = data.get();
             student1.setStudentName(student.getStudentName());
             student1.setStudentHobby(student.getStudentHobby());
+            repo.save(student1);
             return "Updated Successfully";
         }
         else {
